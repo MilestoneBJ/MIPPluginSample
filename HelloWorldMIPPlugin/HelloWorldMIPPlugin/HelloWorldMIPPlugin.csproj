@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82DE155D-101F-4EF4-BF1B-EB2DB6170BF9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VideoOS.CustomDevelopment.HelloWorldMIPPlugin</RootNamespace>
+    <AssemblyName>HelloWorldMIPPlugin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VideoOS.Platform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bc60fba4a7969f89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Milestone\MIPSDK\Bin\VideoOS.Platform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\HelloWorldMIPPluginAddUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\HelloWorldMIPPluginAddUserControl.Designer.cs">
+      <DependentUpon>HelloWorldMIPPluginAddUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\HelloWorldMIPPluginHelpPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\HelloWorldMIPPluginHelpPage.Designer.cs">
+      <DependentUpon>HelloWorldMIPPluginHelpPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\HelloWorldMIPPluginItemManager.cs" />
+    <Compile Include="Admin\HelloWorldMIPPluginUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\HelloWorldMIPPluginUserControl.Designer.cs">
+      <DependentUpon>HelloWorldMIPPluginUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Background\HelloWorldMIPPluginBackgroundPlugin.cs" />
+    <Compile Include="Client\HelloWorldMIPPluginOptionsDialogPlugin.cs" />
+    <Compile Include="Client\HelloWorldMIPPluginOptionsDialogUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Client\HelloWorldMIPPluginOptionsDialogUserControl.Designer.cs">
+      <DependentUpon>HelloWorldMIPPluginOptionsDialogUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\HelloWorldMIPPluginSidePanelPlugin.cs" />
+    <Compile Include="Client\HelloWorldMIPPluginSidePanelUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Client\HelloWorldMIPPluginSidePanelUserControl.Designer.cs">
+      <DependentUpon>HelloWorldMIPPluginSidePanelUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\HelloWorldMIPPluginViewItemPlugin.cs" />
+    <Compile Include="Client\HelloWorldMIPPluginViewItemUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Client\HelloWorldMIPPluginViewItemUserControl.Designer.cs">
+      <DependentUpon>HelloWorldMIPPluginViewItemUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\HelloWorldMIPPluginPropertiesUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Client\HelloWorldMIPPluginPropertiesUserControl.Designer.cs">
+      <DependentUpon>HelloWorldMIPPluginPropertiesUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\HelloWorldMIPPluginViewItemManager.cs" />
+    <Compile Include="Client\HelloWorldMIPPluginWorkSpacePlugin.cs" />
+    <Compile Include="Client\HelloWorldMIPPluginWorkSpaceViewItemManager.cs" />
+    <Compile Include="Client\HelloWorldMIPPluginWorkSpaceViewItemPlugin.cs" />
+    <Compile Include="Client\HelloWorldMIPPluginWorkSpaceViewItemUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Client\HelloWorldMIPPluginWorkSpaceViewItemUserControl.Designer.cs">
+      <DependentUpon>HelloWorldMIPPluginWorkSpaceViewItemUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="HelloWorldMIPPluginDefinition.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\HelloWorldMIPPluginAddUserControl.resx">
+      <DependentUpon>HelloWorldMIPPluginAddUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\HelloWorldMIPPluginViewItemUserControl.resx">
+      <DependentUpon>HelloWorldMIPPluginViewItemUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\HelloWorldMIPPluginPropertiesUserControl.resx">
+      <DependentUpon>HelloWorldMIPPluginPropertiesUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Client\HelloWorldMIPPluginWorkSpaceViewItemUserControl.resx">
+      <DependentUpon>HelloWorldMIPPluginWorkSpaceViewItemUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\HelloWorldMIPPluginHelpPage.resx">
+      <DependentUpon>HelloWorldMIPPluginHelpPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\HelloWorldMIPPluginUserControl.resx">
+      <DependentUpon>HelloWorldMIPPluginUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Client\HelloWorldMIPPluginOptionsDialogUserControl.resx">
+      <DependentUpon>HelloWorldMIPPluginOptionsDialogUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\HelloWorldMIPPluginSidePanelUserControl.resx">
+      <DependentUpon>HelloWorldMIPPluginSidePanelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\HelloWorldMIPPlugin.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="plugin.def">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Resources\HelloWorldMIPPluginWorkSpace.bmp" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
