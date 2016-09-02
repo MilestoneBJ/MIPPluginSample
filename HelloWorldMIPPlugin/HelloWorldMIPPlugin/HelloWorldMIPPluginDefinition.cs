@@ -27,7 +27,7 @@ namespace VideoOS.CustomDevelopment.HelloWorldMIPPlugin
         private static System.Drawing.Image _topTreeNodeImage;
 
         internal static Guid HelloWorldMIPPluginPluginId = new Guid("13e43c78-b109-45d1-a273-c8c8d221f5f9");
-        internal static Guid HelloWorldMIPPluginKind = new Guid("498c8afb-67d9-4489-b2a4-3eccbc40aa99");
+        internal static Guid HelloWorldMIPPluginKind = new Guid("a4f1045c-f79d-4304-814d-2df30da32083"); // Changed by development-C
         internal static Guid HelloWorldMIPPluginSidePanel = new Guid("dd15bc38-d46d-4ef5-b05a-ea31ac90c7ee");
         internal static Guid HelloWorldMIPPluginViewItemPlugin = new Guid("ebad386d-0759-40aa-b754-5540ad0ed36f");
         internal static Guid HelloWorldMIPPluginOptionsDialog = new Guid("3a993897-a4da-4517-ae35-0070062b6c41");
