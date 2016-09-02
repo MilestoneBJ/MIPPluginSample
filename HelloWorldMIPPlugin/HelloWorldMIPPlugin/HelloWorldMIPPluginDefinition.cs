@@ -14,7 +14,7 @@ using VideoOS.Platform.Client;
 namespace VideoOS.CustomDevelopment.HelloWorldMIPPlugin
 {
     /// <summary>
-    /// The PluginDefinition is the ‘entry’ point to any plugin.  
+    /// The PluginDefinition is the ‘entry’ point to any plugin.  New plug-ins must be added here.
     /// This is the starting point for any plugin development and the class MUST be available for a plugin to be loaded.  
     /// Several PluginDefinitions are allowed to be available within one DLL.
     /// Here the references to all other plugin known objects and classes are defined.
